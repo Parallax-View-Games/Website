@@ -1,7 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Jersey+25);
 .title{
- font-family:'Jersey 25';padding:6px; text-align:center; color:rgb(50, 50, 50); font-size:50px; border-top:8px solid rgb(0, 0, 255); border-radius:20px; border-bottom:8px solid rgb(0, 0, 255); border-left:8px solid rgb(255, 0, 0); border-right:8px solid rgb(255, 0, 0);
+ font-family:'Jersey 25';padding:6px; text-align:center; color:rgb(50, 50, 50); font-size:80px; border-top:10px solid rgb(0, 0, 255); border-radius:20px; border-bottom:10px solid rgb(0, 0, 255); border-left:10px solid rgb(255, 0, 0); border-right:10px solid rgb(255, 0, 0);
 }
 h1{
-text-align:center; padding:8px;
+text-align:center; padding:20px;
+}
+h2{text-align:center;}
+.subtitle{
+font-family:'Jersey 25';padding:6px; text-align:center; color:rgb(50, 50, 50); font-size:60px;
+}
+h3{
+text-align:center; font-family:'Jersey 25';padding:6px; color:rgb(50, 50, 50); font-size:50px;
+}
+.tiles{
+padding:8px; border:6px solid rgb(0, 0, 0); border-radius:20px; color:rgb(255, 255, 255); background-color:rgb(255, 0, 0)
+}
+.tiles:hover{
+background-color:rgb(0, 255, 0)
+}
+.scratch{
+padding:8px; border:6px solid rgb(0, 0, 0); border-radius:20px; color:rgb(255, 255, 255); background-color:rgb(255, 140, 0)
+}
+.scratch:hover{
+background-color:rgb(0, 255, 0)
 }
