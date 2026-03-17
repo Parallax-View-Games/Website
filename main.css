@@ -24,3 +24,9 @@ padding:8px; border:6px solid rgb(0, 0, 0); border-radius:20px; color:rgb(255, 2
 .scratch:hover{
 background-color:rgb(0, 255, 0)
 }
+.para{
+  width:50px; text-align:center; font-family:'Jersey 25';padding:6px; color:rgb(50, 50, 50); font-size:50px;
+}
+a{
+  width:50px; text-align:center; font-family:'Jersey 25';padding:6px; font-size:50px;
+}
