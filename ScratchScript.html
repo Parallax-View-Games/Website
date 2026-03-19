@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>ParallaxViewGames.com</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1><span class='title'>Scratch Script</span></h1>
+    <div id='Tiles'>  
+      <h2><span class='subtitle'>What is it?</span></h2>
+      <p id='tilesp'><span class='para'>Scratch script is a custom programming language that I made. The interpreter is themed like the scratch editor which is how i came up with the name. The interpreter is not going to be made public until i have finished the project. Pieces of code are called commands. This is because the language was originally called "Command Code" and the code looks like command prompts. In the next section, I will include some rules for the syntax.</span></p>
+    </div>
+        <div id='Playing'>  
+      <h2><span class='subtitle'>Syntax: basic rules</span></h2>
+      <p id='tilesp'><span class='para'>All commands start with a forward slash and all commands end with brackets. strings don't require quotation marks. for example, instead of this, "/costume.set("costume name")", you would need to use this, "/costume.set(costume name)".</span></p>
+    </div>
+   <div id='Syntax'>  
+      <h2><span class='subtitle'>Syntax: basic commands</span></h2>
+      <p id='tilesp'><span class='para'>Most commands follow a three part rule. They start with the type of command followed by a dot then the main command. After that, any value or string needed is placed in brackets at the end of the command. Commands that don't require a string or value still need to have brackets. for example, the code to hide a sprite doesn't have any value but it still has brackets; "/costume.hide()".</span></p>
+    </div>
+    <div id='Syntax'>  
+      <h2><span class='subtitle'>Syntax: running code</span></h2>
+      <p id='tilesp'><span class='para'>All code needs to be within one of these 2 commands, "//start{}" and "//forever{}". The code needs to be within the curly brackets, any code outside of these brackets will not run. Code inside the start command will run once as soon as the project runs. Code inside the forever command will loop until the project stops.</span></p>
+    </div>
+    <div id='Syntax'>  
+      <h2><span class='subtitle'>Syntax: IF commands</span></h2>
+      <p id='tilesp'><span class='para'>IF checks are very different from other commands. they start normally with "/if.". then there is the condition which has to be placed in square brackets. finally, the code that the if check runs is placed in the normal brackets at the end. an if check would usaully look like this; "/if.[d.pressed](/move.right(10))".</span></p>
+    </div>
+    <div id='Syntax'>  
+      <h2><span class='subtitle'>Syntax: Looping commands</span></h2>
+      <p id='tilesp'><span class='para'>Loops are very similar to If commands, there are only 2 differences. First of all, the "/if" is replaced with "/repeat". The number of times that the loop will run will replace the condition in the square brackets. A loop command would look something like this; "/repeat.[10](/move.up(1))".</span></p>
+    </div>
+    <a href="index.html">Back to main page</a>
+    <script>
+      function backpage(){
+        window.location.replace('index.html');
+      }
+    </script>
+  </body>
+</html>
