@@ -7,9 +7,9 @@
     <h1><span class='title'>Scratch Script</span></h1>
     <div id='Tiles'>  
       <h2><span class='subtitle'>What is it?</span></h2>
-      <p id='tilesp'><span class='para'>Scratch script is a custom programming language that I made. The interpreter is themed like the scratch editor which is how i came up with the name. The interpreter is not going to be made public until i have finished the project. Pieces of code are called commands. This is because the language was originally called "Command Code" and the code looks like command prompts. In the next section, I will include some rules for the syntax.</span></p>
+      <p id='tilesp'><span class='para'>Scratch script is a custom programming language that I made. The interpreter is themed like the scratch editor because this language is meant to be like a bridge for scratch users. They learn this so that learning other programming languages will be easier. Pieces of code are called commands. I will refer to them as commands in the syntax section. This is because the language was originally called "Command Code" and pieces code look like command prompts. In the next section, I will include some rules for the syntax.</span></p>
     </div>
-        <div id='Playing'>  
+        <div id='Syntax'>  
       <h2><span class='subtitle'>Syntax: basic rules</span></h2>
       <p id='tilesp'><span class='para'>All commands start with a forward slash and all commands end with brackets. strings don't require quotation marks. for example, instead of this, "/costume.set("costume name")", you would need to use this, "/costume.set(costume name)".</span></p>
     </div>
@@ -19,16 +19,31 @@
     </div>
     <div id='Syntax'>  
       <h2><span class='subtitle'>Syntax: running code</span></h2>
-      <p id='tilesp'><span class='para'>All code needs to be within one of these 2 commands, "//start{}" and "//forever{}". The code needs to be within the curly brackets, any code outside of these brackets will not run. Code inside the start command will run once as soon as the project runs. Code inside the forever command will loop until the project stops.</span></p>
+      <p id='tilesp'><span class='para'>All code needs to be within one of these 2 commands, "//start{}" and "//forever{}". The code needs to be within the curly brackets, any code outside of these brackets will not run. Code inside the start command will run once as soon as the project runs. Code inside the forever command will loop until the project stops. Also, placing this, "!", before the brackets in a forever command will make the interpreter loop through all of the code in a single tick. This makes projects run smoother but wait commands do not work and it speeds up the project significantly which isn't useful in some situations.</span></p>
     </div>
     <div id='Syntax'>  
       <h2><span class='subtitle'>Syntax: IF commands</span></h2>
-      <p id='tilesp'><span class='para'>IF checks are very different from other commands. they start normally with "/if.". then there is the condition which has to be placed in square brackets. finally, the code that the if check runs is placed in the normal brackets at the end. an if check would usaully look like this; "/if.[d.pressed](/move.right(10))".</span></p>
+      <p id='tilesp'><span class='para'>IF checks are very different from other commands. they start normally with "/if.". then there is the condition which has to be placed in square brackets. finally, the code that the if check runs is placed in the normal brackets at the end. an if check would usaully look like this; "/if.[d.pressed](/move.right(10))". Also, placing this, "!" , at the start of a condition will turn it into an "if not" check. IMPORTANT: Nested if commands DO NOT WORK! Although they technically work, it causes the interpreter to lag and sometimes crash.</span></p>
     </div>
     <div id='Syntax'>  
       <h2><span class='subtitle'>Syntax: Looping commands</span></h2>
       <p id='tilesp'><span class='para'>Loops are very similar to If commands, there are only 2 differences. First of all, the "/if" is replaced with "/repeat". The number of times that the loop will run will replace the condition in the square brackets. A loop command would look something like this; "/repeat.[10](/move.up(1))".</span></p>
     </div>
+    <div id='Syntax'>  
+      <h2><span class='subtitle'>Syntax: Variables</span></h2>
+      <p id='tilesp'><span class='para'>Variables need to be created before they can be used. They can be created using this command; "/var.create(variable name)". After they're created, you can set a variable to any value or string using this command; "/var.set_variable(text or value)". You can also add values to variables using this command; "/var.add_variable(value)".</span></p>
+    </div>
+    <div id='Syntax'>  
+      <h2><span class='subtitle'>Syntax: Reading values</span></h2>
+      <p id='tilesp'><span class='para'>If you need the code to read the value of a variable or get info such as the sprites X position, you'll need to use reporters. Any text inside of double quotation marks is a reporter. The interpreter will replace reporters with the value they represent.</span></p>
+    </div>
+    <div id='Syntax'>  
+      <h2><span class='subtitle'>Syntax: Defining scripts</span></h2>
+      <p id='tilesp'><span class='para'>If you need to write the same code multiple times, it is best to define it. To define code, you need to use this command; "/define.name(code)". To run defined code, you use this command; "/run.name()". It is possible to define code during runtime however, it is recommended that all definitions are placed into the //start command, not the //forever command.</span></p>
+    </div>
+  <div>  
+    <a href="valid.html">A list of all valid commands</a>
+  </div>  
     <a href="index.html">Back to main page</a>
     <script>
       function backpage(){
