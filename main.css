@@ -15,18 +15,18 @@ text-align:center; font-family:'Jersey 25';padding:6px; color:rgb(50, 50, 50); f
 .tiles{
 padding:8px; border:6px solid rgb(0, 0, 0); border-radius:20px; color:rgb(255, 255, 255); background-color:rgb(255, 0, 0)
 }
-.tiles:hover{
-background-color:rgb(0, 255, 0)
-}
 .scratch{
 padding:8px; border:6px solid rgb(0, 0, 0); border-radius:20px; color:rgb(255, 255, 255); background-color:rgb(255, 140, 0)
 }
-.scratch:hover{
-background-color:rgb(0, 255, 0)
-}
 .para{
-  width:50px; text-align:center; font-family:'Jersey 25';padding:6px; color:rgb(50, 50, 50); font-size:50px;
+  width:100%; text-align:center; font-family:'Jersey 25';padding:6px; color:rgb(50, 50, 50); font-size:50px;
 }
 a{
   width:50px; text-align:center; font-family:'Jersey 25';padding:6px; font-size:50px;
+}
+.save{
+padding:8px; border:6px solid rgb(0, 0, 0); border-radius:20px; color:rgb(255, 255, 255); background-color:rgb(20, 20, 255)
+}
+.button:hover{
+background-color:rgb(0, 255, 0)
 }
