@@ -5,6 +5,11 @@
   </head>
   <body>
     <h1><span class='title'>Parallax View Games</span></h1>
+    <div id='Info'>  
+      <h2><span class='subtitle'>Info:</span></h2>
+      <h3 id='aboutbutton'><span class='info button'>About me</span></h3>
+      <h3 id='devlogbutton'><span class='info button'>Devlogs</span></h3>
+    </div>
     <div id='Games'>  
       <h2><span class='subtitle'>Games:</span></h2>
       <h3 id='tilesbutton'><span class='tiles button'>Tiles</span></h3>
@@ -27,6 +32,14 @@
        window.location.replace('savefiles.html') 
       }
       savebutton.onclick = Savepage
+      function Devpage(){
+        window.location.replace('devlogs.html')
+      }
+      devlogbutton.onclick = Devpage
+      function aboutpage(){
+        window.location.replace('about.html')
+      }
+      aboutbutton.onclick = aboutpage
     </script>
   </body>
 </html>
