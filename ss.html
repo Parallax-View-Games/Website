@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Parallax View Games</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <nav class="navbar ss">
+    <div class="nav">
+      <img src="ss.png" alt="Logo" class="logo ss">
+      <span class="title ss">Scratch Script</span>
+      <a href="index.html"><span class="ssbutton">Home</span></a>
+      <a href="#Tutorial"><span class="ssbutton">Syntax</span></a>
+      <a href="#About"><span class="ssbutton">About</span></a>
+    </div>
+    </nav>
+    <section id="About"></section>
+    <h1 class="add"><span class="subtitle">About Scratch Script</span></h1>
+    <div class="section">
+       <p>Scratch script is a custom programming language that I made. It is meant to be a programming language for making games. I took some insparation from scratch code to make scratch script. Thats how I got the name. I don't know to make a compiler for scratch script so, I am only going to make an interpreter.</p>
+    </div>
+    <section id="Tutorial"></section>
+    <h1 class="add"><span class="subtitle">Basic syntax</span></h1>
+    <div class="section">
+       <p>The code is split into 2 main parts, triggers and commands. Commands are how the main logic is coded, Triggers are used to run commands. Most commands have a three part structure that looks like this; /type.command(value). The first section is the type of command, The second section is the name of a command of that type. For example, /var.create() and /clone.create() will do different things. The final section is meant to be filled with any text or value required for the command to run, for example, /move.left(32). Most triggers have a similar three part structure; //type.sprite{commands}. For example, this is a start trigger; //start.player{}. Also, triggers can run as many commands as you want as long as they're added like this; //start.player{/move.setx(0)/move.sety(0)}. Some commands don't need any text or value however, the brackets are still requried. And if you want a trigger to run code on all sprites, you can simply use "all" in place of the sprite name.</p>
+    </div>
+    <h1 class="add"><span class="subtitle">If checks</span></h1>
+    <div class="section">
+       <p>If checks are one of three unique commands that can run other commands. They also follow the three part stucture but with one main difference. The name of the command is replaced with a condition like this; /if.[condition](code). The code is placed inside the brackets and the condition is placed inside square brackets. most conditions use a 2 part system that looks like this; [part1.part2]. they can also look like this [part1 = part2], [part1 &gt; part2] or [part1 &lt; part2]. you can also use symbols to make logic gates. for example, [condition&amp;condition] is an and gate, [condition|condition] is an or gate and [!condition] is a not gate.</p>
+    </div>
+  </body>
+</html>
